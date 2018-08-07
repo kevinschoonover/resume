@@ -720,7 +720,7 @@
 	maxbibnames=99, % affects only the bibliography, pass 99 to print all
 	hyperref=true,
 	block=none,
-	backend=biber % {Options: bibtex, biber}
+	backend=bibtex % {Options: bibtex, biber}
 	]{biblatex}
 
 % Avoid splitting entries across page break (only for 3 or fewer lines)
@@ -746,7 +746,7 @@
   \par%
   \newblock%
   {%
-    \fontsize{8pt}{1em}\bodyfontlight\color{graytext}%
+    \fontsize{8pt}{1em}\bodyfont\scshape\color{awesome}
     \usebibmacro{journal+issuetitle}%
     \setunit{\space}%
     \printfield{pages}%
@@ -756,7 +756,7 @@
     \printfield{year}%
     \newunit%
   }
-  \par\vspace{0.3\baselineskip}
+  \par\vspace{0.8\baselineskip}
 }
 
 \DeclareBibliographyDriver{inproceedings}{%
@@ -767,7 +767,7 @@
   \par%
   \newblock%
   {%
-    \fontsize{8pt}{1em}\bodyfontlight\color{graytext}%
+    \fontsize{8pt}{1em}\bodyfont\scshape\color{awesome}
     \printfield{booktitle}%
     \setunit{\addcomma\space}%
     \printfield{year}%
@@ -786,7 +786,7 @@
   \par%
   \newblock%
   {%
-    \fontsize{8pt}{1em}\bodyfontlight\color{graytext}%
+    \fontsize{8pt}{1em}\bodyfont\scshape\color{awesome}
     \printfield{booktitle}%
     \setunit{\addcomma\space}%
     \printfield{year}%
@@ -805,7 +805,7 @@
   \par%
   \newblock%
   {%
-    \fontsize{8pt}{1em}\bodyfontlight\color{graytext}%
+    \fontsize{8pt}{1em}\bodyfont\scshape\color{awesome}
     \printfield{booktitle}%
     \setunit*{\addcomma\space}%
     \printfield{note}%
@@ -826,7 +826,7 @@
   \par%
   \newblock%
   {%
-    \fontsize{8pt}{1em}\bodyfontlight\color{graytext}%
+    \fontsize{8pt}{1em}\bodyfont\scshape\color{awesome}
     \printfield{type}%
     \setunit{\space}%
     \printfield{number}%
@@ -839,7 +839,7 @@
 
 % New syntax for flexible backend (BibLaTeX > v3.3)
 \DeclareNameFormat{author}{%
-  \fontsize{9pt}{1em}\bodyfont%
+  \fontsize{9pt}{1em}\bodyfontlight%
   \renewcommand*{\multinamedelim}{\addcomma\addspace}%
   \nameparts{#1}%
   \ifthenelse{\value{listcount}=1}
