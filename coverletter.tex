@@ -1,0 +1,162 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, letterpaper]{awesome-cv}
+
+% Configure page margins with geometry
+% \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-red}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+\name{Kevin}{Schoonover}
+% \position{Software Engineer}
+% \address{246-1002, Gwangmyeongmayrouge Apt. 86, Cheongna lime-ro, Seo-gu, Incheon-si, 404-180, Rep. of KOREA}
+
+\mobile{(214) 499-7919} 
+\email{schoonoverkevinm@gmail.com}
+% \homepage{}
+\github{kevinschoonover}
+\linkedin{schoonoverkevinm}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \extrainfo{extra informations}
+
+% \quote{``Must be the change that you want to see in the world."}
+
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+  {Campus Recruitment Team}
+  {Reddit}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+% \lettertitle{Job Application for Software Engineering Inter}
+% How the letter is opened
+\letteropening{Dear Sir or Madam,}
+% How the letter is closed
+\letterclosing{Sincerely,}
+% Any enclosures with the letter
+\letterenclosure[Attached]{Curriculum Vitae}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+\makecvheader
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Kevin Schoonover~~~·~~~Cover Letter}
+  {}
+
+% Print the title with above letter informations
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+\lettersection{You can add any feature to Reddit. What would you add and why?}
+Reddit's feature set provides powerful and fast ways to consume a large number of
+posts in order to find funny gifs, interesting articles, my favorite car
+salesman memes, and any other content a user could want. But, what if users did not
+need to consume large amounts of posts to find the information they want? As the
+6th most popular site, Reddit has access to a large amount of data which can be
+used to personalize this experience more closely. I would add a `personalized'
+sort option to the `popular' section which will take the users subscribed
+subreddits, comment history, viewing history, upvotes/downvotes, and other
+metrics to determine new subreddits and posts the user would like. The `Best' sort
+filter in the `Home' tab provides a similar experience, but focuses on `
+surfacing posts that are from communities you’ve shown interest in recently'
+(\url{https://www.reddit.com/r/changelog/comments/7hkvjn/what_we_think_about_when_we_think_about_ranking/}).
+Reddit should take this idea further and attempt to match a user with a new
+subreddit and show them a new post they have not considered before. The suggestion
+has a couple of problems: how does Reddit ensure with a high accuracy these are
+posts the user wants to see and how to prevent an echo chamber of information
+and ideas that usually ensues with personalized information. Both problems can
+be solved primarily by making it optional as a filter. The user, in this case,
+can enable and disable the feature as needed and come back at a later time if
+the system does not have enough data to make accurate predictions. Other
+concerns such as privacy and more specific implementation to solve the
+problems require a much longer discussion.
+
+\lettersection{What is Captain Kevin's first Galactic Reddit Academy mission?}
+`Ladies and Gentleman, plot a course for the center of the Milky Way Galaxy,` I
+say as I walk into the bridge and sit in my DXRacer themed captain's chair, `we
+are going to see a supermassive black hole!'. I think supermassive black holes
+are incredibly interesting and visually stunning. Both the object and the song
+by Muse tantalize my imagination with their sophisticated fundamentals. Our
+expedition would be one to satisfy my desire to see the event horizon with my
+own eyes and one of scientific exploration. Special relativity and its space and
+time components are stretched to their limits because of the infinite warping
+that black holes create. I have spent many hours watching YouTube videos to gain
+an intuition on how space and time form this underlying plane to our universe
+while showing the limits of Newtonian Gravity. The trek only reinforced my lack
+of understanding, but a trip to see a black hole may solve this curiosity. The
+last, selfish reason is the bragging rights of being the first person to see a
+black hole with my own eyes.  While this trip will take 26,490 $\pm$ 100 light
+years, it would be well worth it to see how the beauty of an event horizon and
+the underlying science meet.
+
+\end{cvletter}
+
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter informations
+\makeletterclosing
+
+\end{document}
+
